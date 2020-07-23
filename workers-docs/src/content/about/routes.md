@@ -113,6 +113,6 @@ Here is the full set of rules governing route pattern validity:
     - `https://example.com/path/*` matches `https://example.com/path/readme.txt`
       but _not_ `https://example.com/path2`.
 
-- **Subdomains must have a DNS Record**
+- **Subdomains must have a DNS Reord**
 
     All subdomains must have a [DNS record](https://support.cloudflare.com/hc/en-us/articles/360019093151#h_60566325041543261564371) to be proxied on Cloudflare and compatible with Workers. For example if you have the route pattern `*.example.com` and no DNS records, any request to subdomain.example.com will result in the error `ERR_NAME_NOT_RESOLVED`.
